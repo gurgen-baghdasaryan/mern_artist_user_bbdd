@@ -4,9 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node client/server.js",
-    "server": "nodemon client/server.js",
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
@@ -14,6 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/gurgen-baghdasaryan/mern_artist_user_bbdd.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -23,7 +23,6 @@
   "dependencies": {
     "dotenv": "^10.0.0",
     "express": "^4.17.2",
-    "module_name": "^1.0.0",
     "mongoose": "^6.1.2"
   },
   "devDependencies": {
